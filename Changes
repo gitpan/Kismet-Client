@@ -1,0 +1,9 @@
+Revision history for Perl extension Kismet::Client.
+
+0.01 Mon Aug 18 05:11:45 CEST 2003
+   - First release ready for CPAN :)
+   
+0.01  Wed Aug 13 12:40:07 2003
+	- original version; created by h2xs 1.21 with options
+		-XA -n Kismet::Client
+
