@@ -1,4 +1,4 @@
-Kismet/Client version 0.02
+Kismet/Client version 0.03
 ==========================
 
 Kismet::Client is a simple module to connect to a Kismet-server.
@@ -27,9 +27,9 @@ This module requires these other modules and libraries:
 
 BUGS
 
-If you find any bugs, please send a mail to me about it. If you know how
-to fix it, send me a patch.
-								
+If you find any bugs, please use the RT interface on CPAN (http://rt.cpan.org)
+
+If  you know how to fix it, submit a patch :)
 
 COPYRIGHT AND LICENCE
 

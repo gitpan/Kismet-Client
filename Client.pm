@@ -10,11 +10,11 @@ use IO::Socket;
 use Socket;
 use Fcntl;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
-Kismet::Client
+Kismet::Client - Object-oriented module to connect to a Kismet server
 
 =head1 DESCRIPTION
 
@@ -300,13 +300,13 @@ Sends a PAUSE to the Kismet-server.
 
 =cut
 
-$^W=0;
+no warnings;
 sub pause {
    my $self = shift;
    croak ("Not connected to Kismet server") unless $self->connected;
    $self->{'_SOCKET'}->send("!0 PAUSE\n",0) or croak ("Could not send to server");
 }
-$^W=1;
+use warnings;
 
 =head2 resume
 

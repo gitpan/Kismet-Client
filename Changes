@@ -1,8 +1,15 @@
 Revision history for Perl extension Kismet::Client.
 
+0.03 Mon Aug 18 17:56:38 CEST 2003
+   - Fixed a warning for pause()
+   - Added ABSTRACT_FROM to Makefile.PL
+   - Added a description for ABSTRACT in Client.pm
+   - Updated README. (added rt.cpan.org)
+   - Updated Changes. (DUH!)
+   
 0.02 Mon Aug 18 06:27:41 CEST 2003
    - Gah, forgot to remove a annoying debug message, sorry
-     for that one. Ill will upload a new version as soon as
+     for that one. I will upload a new version as soon as
      possible. (Not right now, im sitting on the bus to work
      and kismet'ing :) )
 

@@ -1,17 +1,19 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -I../../
 use Kismet::Client;
 
-# Simple demo of Kismet:Client
+# Simple demo - Kismet:Client
 #
-# Freeware or whatever. Do whatever you whant with this,
+# Freeware or whatever. Do whatever you please with this,
 # just dont blame me.
 #
 
 my $kismet = Kismet::Client->new(server => '127.0.0.1', port => 2501);
+
+$kismet->add_handler('NETWORK', \&network);
+
 $kismet->connect();
 
 $kismet->enable("NETWORK", '*');
-$kismet->add_handler('NETWORK', \&network);
 
 sub network {
    my %info = @_;

@@ -13,5 +13,6 @@ WriteMakefile(
     'dist' => { 'COMPRESS' => 'gzip --best' },
    ($] >= 5.005 ?
       (
+       ABSTRACT_FROM => 'Client.pm',
        AUTHOR     => 'Kay Sindre Bærulfsen <kaysb @ uten.net>') : ()),
 );
