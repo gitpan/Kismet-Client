@@ -1,4 +1,4 @@
-Kismet/Client version 0.01
+Kismet/Client version 0.02
 ==========================
 
 Kismet::Client is a simple module to connect to a Kismet-server.

@@ -1,5 +1,11 @@
 Revision history for Perl extension Kismet::Client.
 
+0.02 Mon Aug 18 06:27:41 CEST 2003
+   - Gah, forgot to remove a annoying debug message, sorry
+     for that one. Ill will upload a new version as soon as
+     possible. (Not right now, im sitting on the bus to work
+     and kismet'ing :) )
+
 0.01 Mon Aug 18 05:11:45 CEST 2003
    - First release ready for CPAN :)
    

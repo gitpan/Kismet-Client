@@ -10,7 +10,7 @@ use IO::Socket;
 use Socket;
 use Fcntl;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -124,7 +124,6 @@ sub _read {
       $self->{'_BUFFER'} .= $data;
    }
    while ($self->{'_BUFFER'}=~s/^(.*?)\r?\n//) {
-      print "DEBUG: $1\n";
       $self->_parse($1);
    }
 }
@@ -301,11 +300,13 @@ Sends a PAUSE to the Kismet-server.
 
 =cut
 
+$^W=0;
 sub pause {
    my $self = shift;
    croak ("Not connected to Kismet server") unless $self->connected;
    $self->{'_SOCKET'}->send("!0 PAUSE\n",0) or croak ("Could not send to server");
 }
+$^W=1;
 
 =head2 resume
 
